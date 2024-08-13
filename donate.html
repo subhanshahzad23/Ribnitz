@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#feed01" />
+    <title>Wandau | Art & History Museum</title>
+    <meta name="author" content="Themezinho" />
+    <meta
+      name="description"
+      content="For all kind of exhibition museum website"
+    />
+    <meta
+      name="keywords"
+      content="wandau, exhibition, museum, art, history, entry, ticket, contemporary, modern, booking, visit, culture, life, centuries, roots, fancy, themezinho"
+    />
+
+    <!-- FAVICON FILES -->
+    <link
+      href="ico/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="ico/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+    <link
+      href="ico/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link
+      href="ico/apple-touch-icon-57-precomposed.png"
+      rel="apple-touch-icon"
+    />
+    <link href="ico/favicon.png" rel="shortcut icon" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/odometer.min.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+      <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+        <path
+          d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+        ></path>
+      </svg>
+      <div class="inner">
+        <canvas
+          class="progress-bar"
+          id="progress-bar"
+          width="200"
+          height="200"
+        ></canvas>
+        <figure><img src="images/preloader.png" alt="Image" /></figure>
+        <small>Loading</small>
+      </div>
+      <!-- end inner -->
+    </div>
+    <!-- end preloder -->
+    <div class="page-transition">
+      <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+        <path
+          d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- end page-transition -->
+    <div class="smooth-scroll">
+      <div class="section-wrapper" data-scroll-section>
+        <!-- Search Box -->
+        <div class="search-box">
+          <div class="container">
+            <div class="form">
+              <h3>LET'S EXPLORE</h3>
+              <!-- <input type="search" placeholder="What are you looking for?" />
+              <input type="submit" value="SEARCH" /> -->
+            </div>
+            <div class="search-events">
+              <ul>
+                <li>
+                  <h5><a href="#">Ribnitzer Rebbe's Miracles</a></h5>
+                  <small>Discover his legacy</small>
+                </li>
+                <li>
+                  <h5><a href="#">Teachings of the Rebbe</a></h5>
+                  <small>Insights and wisdom</small>
+                </li>
+                <li>
+                  <h5><a href="#">Avodas Hashem</a></h5>
+                  <small>Devotional practices</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end search-box -->
+
+        <!-- Sidebar Widget -->
+        <aside class="side-widget">
+          <svg viewBox="0 0 600 1080" preserveAspectRatio="none">
+            <path
+              d="M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z"
+            ></path>
+          </svg>
+          <figure class="logo">
+            <img src="images/logo-light.png" alt="Logo" />
+          </figure>
+          <div class="inner">
+            <div class="display-mobile" style="display: block">
+              <div class="site-menu">
+                <ul>
+                  <li><a href="about.html">About the Rebbe</a></li>
+                  <li><a href="miracle.html">Miracles</a></li>
+                  <li><a href="teaching.html">Teachings</a></li>
+                  <li><a href="avodas.html">Avodas Hashem</a></li>
+                  <li><a href="legacy.html">Legacy</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="prayers.html">Daily Prayers</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- end sidebar widget -->
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html"> <img src="images/logo.png" alt="Logo" /> </a>
+          </div>
+
+          <!-- <div class="site-menu mob">
+        <ul>
+            <li><a href="about.html">About the Rebbe</a></li>
+            <li><a href="miracles.html">Miracles</a></li>
+            <li><a href="teachings.html">Teachings</a></li>
+            <li><a href="avodas-hashem.html">Avodas Hashem</a></li>
+            <li><a href="legacy.html">Legacy</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="daily-prayers.html">Daily Prayers</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div> -->
+          <div class="search-button"><i class="far fa-search"></i></div>
+          <div class="hamburger-menu">
+            <svg class="hamburger" width="30" height="30" viewBox="0 0 30 30">
+              <path class="line line-top" d="M0,9h30" />
+              <path class="line line-center" d="M0,15h30" />
+              <path class="line line-bottom" d="M0,21h30" />
+            </svg>
+          </div>
+          <div class="navbar-button">
+            <a href="donate.html">DONATE NOW</a>
+          </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- end navbar -->
+        <header class="page-header" data-background="images/page-header.jpg">
+          <div class="inner">
+            <svg width="580" height="400" class="svg-morph">
+              <path
+                id="svg_morph"
+                d="m261,30.4375c0,0 114,6 151,75c37,69 37,174 6,206.5625c-31,32.5625 -138,11.4375 -196,-19.5625c-58,-31 -86,-62 -90,-134.4375c12,-136.5625 92,-126.5625 129,-127.5625z"
+              />
+            </svg>
+            <h1>Donate</h1>
+            <p>
+              Your support helps us continue to honor the legacy of the
+              Ribnitzer Rebbe and sustain the vital work of our Yeshivas,
+              community services, and spiritual programs. Every contribution
+              makes a significant impact.
+            </p>
+          </div>
+          <!-- end inner -->
+        </header>
+        <!-- end page-header -->
+
+        <section class="content-section" data-background="#fffbf7">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="section-title text-center">
+                  <figure>
+                    <img src="images/title-shape.png" alt="Image" />
+                  </figure>
+                  <div style="text-align: center;">
+                    <h2>Support the Legacy of the Ribnitzer Rebbe</h2>
+                    <p>
+                      Every donation helps us to continue the Rebbe’s mission of
+                      spiritual growth, education, and community support.
+                    </p>
+                  </div>
+                </div>
+                <!-- end section-title -->
+              </div>
+              <!-- end col-12 -->
+              <div class="col-lg-5">
+                <div class="donation-options">
+                  <h6>Donation Options</h6>
+                  <ul>
+                    <li>
+                      <strong>One-Time Donation:</strong> Make a single
+                      contribution to support our work.
+                    </li>
+                    <li>
+                      <strong>Monthly Giving:</strong> Provide ongoing support
+                      with a recurring monthly donation.
+                    </li>
+                    <li>
+                      <strong>Specific Projects:</strong> Direct your donation
+                      to a project that resonates with you, such as our Yeshiva,
+                      community programs, or preservation efforts.
+                    </li>
+                  </ul>
+                </div>
+                <!-- end donation-options -->
+
+                <div class="how-donation-helps">
+                  <h6>How Your Donation Helps</h6>
+                  <ul>
+                    <li>Maintaining and expanding our Yeshiva</li>
+                    <li>Supporting students with scholarships and resources</li>
+                    <li>Organizing community events and spiritual programs</li>
+                    <li>
+                      Preserving the teachings and legacy of the Ribnitzer Rebbe
+                    </li>
+                    <li>
+                      Providing assistance to those in need within our community
+                    </li>
+                  </ul>
+                </div>
+                <!-- end how-donation-helps -->
+              </div>
+              <!-- end col-5 -->
+              <div class="col-lg-5">
+                <div class="contact-form">
+                  <h6>Donation Form</h6>
+                  <div class="mb-3">
+                    <input type="text" placeholder="Full Name" />
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <input type="text" placeholder="Email Address" />
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <input type="text" placeholder="Donation Amount" />
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <select>
+                      <option>Donation Frequency</option>
+                      <option>One-Time</option>
+                      <option>Monthly</option>
+                    </select>
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <select>
+                      <option>Specific Project (optional)</option>
+                      <option>Yeshiva Expansion</option>
+                      <option>Community Events</option>
+                      <option>Student Scholarships</option>
+                    </select>
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <select>
+                      <option>Payment Method</option>
+                      <option>Credit Card</option>
+                      <option>PayPal</option>
+                      <option>Bank Transfer</option>
+                    </select>
+                  </div>
+                  <!-- end mb-3 -->
+                  <div class="mb-3">
+                    <input type="submit" value="Donate Now" />
+                  </div>
+                  <!-- end mb-3 -->
+                </div>
+                <!-- end contact-form -->
+              </div>
+              <!-- end col-5 -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- end content-section -->
+
+        <section class="content-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="text-box">
+                  <h3>Testimonials</h3>
+                  <p>
+                    Read stories from those who have benefited from your
+                    generosity. Your donations have made a significant impact on
+                    the lives of many, helping to maintain the legacy of the
+                    Ribnitzer Rebbe.
+                  </p>
+                  <h4>Testimonial 1: A Scholarship That Changed My Life</h4>
+                  <p>
+                    <em
+                      >"Thanks to the scholarship I received, I was able to
+                      attend the Yeshiva and immerse myself in the teachings of
+                      the Ribnitzer Rebbe. This experience transformed my life
+                      and deepened my connection to my faith."</em
+                    >
+                  </p>
+                  <p><strong>— Moshe K., Yeshiva Graduate</strong></p>
+                  <h4>Testimonial 2: A Community Uplifted</h4>
+                  <p>
+                    <em
+                      >"Our community has greatly benefited from the programs
+                      funded by donations. The events and spiritual programs
+                      have brought us closer together and strengthened our
+                      faith."</em
+                    >
+                  </p>
+                  <p><strong>— Shira B., Community Member</strong></p>
+                </div>
+                <!-- end text-box -->
+              </div>
+              <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- end content-section -->
+
+        <section
+          class="content-section no-spacing"
+          data-background="images/section-bg01.jpg"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="note-box">
+                  <h2>Contact Information</h2>
+                  <p>
+                    For more information or assistance with your donation,
+                    please contact us at
+                    <a href="mailto:donations@rivnitz.com"
+                      >donations@rivnitz.com</a
+                    >
+                    or call 718-RIVNITZ.
+                  </p>
+                  <p>
+                    <strong>Tax Information:</strong> All donations are
+                    tax-deductible to the extent permitted by law. You will
+                    receive a receipt for your donation via email.
+                  </p>
+                </div>
+                <!-- end note-box -->
+              </div>
+              <!-- end col-6 -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- end content-section -->
+
+        <section class="content-section no-spacing" data-background="#94ffc4">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="newsletter-box">
+                  <div class="form">
+                    <div class="titles">
+                      <h6>Subscribe Newsletter</h6>
+                      <h2>Sign up to get the latest news</h2>
+                    </div>
+                    <div class="inner">
+                      <input
+                        type="email"
+                        placeholder="Enter your e-mail address"
+                      />
+                      <input type="submit" value="SIGN UP" />
+                    </div>
+                    <small
+                      >Will be used in accordance with our
+                      <a href="#">Privacy Policy</a></small
+                    >
+                  </div>
+                  <!-- end form -->
+                  <figure
+                    class="newsletter-image"
+                    data-scroll
+                    data-scroll-speed="0.7"
+                  >
+                    <img src="images/newsletter-image.png" alt="Image" />
+                  </figure>
+                </div>
+                <!-- end newsletter-box -->
+              </div>
+              <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- end content-section -->
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <h6 class="widget-title">About Rebbe</h6>
+                <ul class="footer-menu">
+                  <li><a href="about.html">About the Rebbe </a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="legacy.html">Legacy</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <h6 class="widget-title">Connect Us</h6>
+                <ul class="social-media">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i> /ribnitz</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fab fa-twitter"></i> /ribnitz-miracles</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube"></i> /ribnitz-tv</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h6 class="widget-title">Visit Us Now</h6>
+                <address class="address">
+                  Ribnitz, Russia <strong>Holy Site</strong>
+                  <i class="fas fa-info-circle"></i> +7 123 456 7890
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <span class="copyright"
+                >© 2023 Ribnitz | The Ribnitzer Rebbe</span
+              >
+              <span class="creation"
+                >Site created by <a href="#">Subhan Shahzad</a></span
+              >
+            </div>
+          </div>
+        </footer>
+        <!-- end footer -->
+      </div>
+    </div>
+
+    <!-- JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/kinetic-slider.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
