@@ -120,15 +120,16 @@
             <div class="display-mobile" style="display: block">
               <div class="site-menu">
                 <ul>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About the Rebbe</a></li>
-                  <li><a href="miracle.html">Miracles</a></li>
                   <li><a href="teaching.html">Teachings</a></li>
+                  <li><a href="miracle.html">Miracles</a></li>
                   <li><a href="avodas.html">Avodas Hashem</a></li>
                   <li><a href="legacy.html">Legacy</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="prayers.html">Daily Prayers</a></li>
-                  <li><a href="donate.html">Donate</a></li>
                   <li><a href="contact.html">Contact</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="prayers.html">Daily Prayers</a></li>
                 </ul>
               </div>
             </div>
@@ -218,10 +219,7 @@
                 <!-- Miracle 2 -->
                 <div class="blog-post">
                   <figure data-scroll data-scroll-speed="-1">
-                    <img
-                      src="images/m3.jpg"
-                      alt="The Lost Child Found"
-                    />
+                    <img src="images/m3.jpg" alt="The Lost Child Found" />
                   </figure>
                   <div class="content-box">
                     <small>Witnessed in the early 1980s</small>
@@ -242,10 +240,7 @@
                 <!-- Miracle 3 -->
                 <div class="blog-post">
                   <figure data-scroll data-scroll-speed="-1">
-                    <img
-                      src="images/m2.jpg"
-                      alt="The Financial Blessing"
-                    />
+                    <img src="images/m2.jpg" alt="The Financial Blessing" />
                   </figure>
                   <div class="content-box">
                     <small>Witnessed in the late 1980s</small>
@@ -262,8 +257,6 @@
                   <!-- end content-box -->
                 </div>
                 <!-- end blog-post -->
-
-               
               </div>
               <!-- end col-8 -->
 
@@ -271,16 +264,22 @@
                 <aside class="sidebar">
                   <div class="widget">
                     <h6 class="widget-title">Featured Testimonies</h6>
-                    <div class="testimonial" style="margin-bottom: 20px;">
-                        <p>"The Rebbe's blessing saved my business from collapse. I can't express the gratitude I feel."</p>
-                        <strong>- David R., New York</strong>
+                    <div class="testimonial" style="margin-bottom: 20px">
+                      <p>
+                        "The Rebbe's blessing saved my business from collapse. I
+                        can't express the gratitude I feel."
+                      </p>
+                      <strong>- David R., New York</strong>
                     </div>
-                    <div class="testimonial" style="margin-bottom: 20px;">
-                        <p>"After praying at the Rebbe's resting place, my long-standing illness was miraculously cured."</p>
-                        <strong>- Leah M., Brooklyn</strong>
+                    <div class="testimonial" style="margin-bottom: 20px">
+                      <p>
+                        "After praying at the Rebbe's resting place, my
+                        long-standing illness was miraculously cured."
+                      </p>
+                      <strong>- Leah M., Brooklyn</strong>
                     </div>
-                </div>
-                
+                  </div>
+
                   <!-- end widget -->
 
                   <div class="widget">
@@ -295,9 +294,7 @@
                       </li>
                       <li>
                         <a href="images/i2.JPG" data-fancybox
-                          ><img
-                            src="images/i2.JPG"
-                            alt="The Lost Child Found"
+                          ><img src="images/i2.JPG" alt="The Lost Child Found"
                         /></a>
                       </li>
                       <li>
@@ -326,43 +323,38 @@
             <div class="row">
               <div class="col-12">
                 <div class="newsletter-box">
-                  <div class="form">
+                  <form class="form" onsubmit="sendEmail(); return false;">
                     <div class="titles">
                       <h6>Subscribe Newsletter</h6>
                       <h2>Sign up to get the latest news</h2>
                     </div>
-                    <!-- end titles -->
                     <div class="inner">
                       <input
+                        id="user_email"
                         type="email"
                         placeholder="Enter your e-mail address"
                       />
                       <input type="submit" value="SIGN UP" />
                     </div>
-                    <!-- end inner -->
                     <small
                       >Will be used in accordance with our
                       <a href="#">Privacy Policy</a></small
                     >
-                  </div>
-                  <!-- end form -->
+                  </form>
                   <figure
                     class="newsletter-image"
                     data-scroll
                     data-scroll-speed="0.7"
                   >
-                    <img src="images/newsletter-image.png" alt="Image" />
+                    <img src="images/newsletter-image.png" alt="Newsletter" />
                   </figure>
                 </div>
-                <!-- end newsletter-box -->
               </div>
-              <!-- end col-12 -->
             </div>
-            <!-- end row -->
           </div>
-          <!-- end container -->
         </section>
         <!-- end content-section -->
+
         <!-- Footer -->
         <footer class="footer">
           <div class="container">
@@ -415,6 +407,41 @@
         <!-- end footer -->
       </div>
     </div>
+    <!-- end smooth-scroll -->
+
+    <!-- Include EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.10.0/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("aVMKjwUh8Akw_nIxP"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+      })();
+
+      function sendEmail() {
+        var templateParams = {
+          user_email: document.getElementById("user_email").value,
+          subscription_date: new Date().toLocaleDateString(), // Add subscription date
+        };
+
+        emailjs
+          .send("service_k9z254j", "template_z0xjowu", templateParams)
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              alert("Subscription successful! Thank you for signing up.");
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              alert("Subscription failed. Please try again later.");
+            }
+          );
+
+        document.getElementById("user_email").value = "";
+      }
+    </script>
 
     <!-- JS FILES -->
     <script src="js/jquery.min.js"></script>
